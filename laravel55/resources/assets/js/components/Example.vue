@@ -1,5 +1,4 @@
 <template>
-
     <ul class="intro-social">
         <li><a href="https://github.com/gdmec07150942"><i class="fa fa-github" title="我的github"></i></a></li>
         <li>
@@ -19,7 +18,6 @@
         </li>
         <li><a href="http://weibo.com/u/5731550805/home"><i class="fa fa-weibo" title="我的微博"></i></a></li>
     </ul>
-
 </template>
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/main.css">

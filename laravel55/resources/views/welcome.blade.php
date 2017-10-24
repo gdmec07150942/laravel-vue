@@ -23,6 +23,7 @@
 ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
     <!-- favicons
 ================================================== -->
     <link rel="icon" type="image/png" href="abc.jpg"><!-- 这是网页图标的地址-->
@@ -98,16 +99,15 @@
     <div class="row section-intro">
         <div class="col-twelve">
 
-            <h5>About</h5>
-            <h1>Let me introduce myself.</h1>
+            <h5>关于我自己</h5>
+            <h1>一个还是年轻活泼的boy</h1>
 
             <div class="intro-info">
 
-                <img src="images/profile-pic.jpg" alt="Profile Picture">
+                <img src="abc.jpg" alt="Profile Picture">
 
-                <p class="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea
-                    eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam
-                    labore consectetur ea id quis eiusmod.</p>
+                <p class="lead">一个积极认真,努力向上的活泼小伙子～。我觉得一个程序猿不仅技术要进步,口才也是要同时进步才行,但也同时需要劳逸结合。
+                    我不喜欢熬夜,因为熬夜的隔天就会头脑混乱,不利于自己进行工作。我喜欢和别人聊天,这样会让我觉得我的生活不单单是打代码，更多的是享受生活。</p>
             </div>
 
         </div>
@@ -117,30 +117,30 @@
 
         <div class="col-six tab-full">
 
-            <h3>Profile</h3>
+            <h3>我的档案</h3>
             <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia
                 consectetur nisi commodo ea magna pariatur nisi cillum.</p>
 
             <ul class="info-list">
                 <li>
                     <strong>Fullname:</strong>
-                    <span>Juan Dela Cruz</span>
+                    <span>许XX</span>
                 </li>
                 <li>
                     <strong>Birth Date:</strong>
-                    <span>September 28, 1987</span>
+                    <span>96后boy</span>
                 </li>
                 <li>
                     <strong>Job:</strong>
-                    <span>Freelancer, Frontend Developer</span>
+                    <span>当然是一个工作认真的程序猿啦～</span>
                 </li>
                 <li>
                     <strong>Website:</strong>
-                    <span>www.kardswebsite.com</span>
+                    <span>www.heroft.com</span>
                 </li>
                 <li>
                     <strong>Email:</strong>
-                    <span>me@kardswebsite.com</span>
+                    <span>554061700@qq.com</span>
                 </li>
 
             </ul> <!-- /info-list -->
@@ -149,31 +149,31 @@
 
         <div class="col-six tab-full">
 
-            <h3>Skills</h3>
+            <h3>我的技能</h3>
             <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia
                 consectetur nisi commodo ea magna pariatur nisi cillum.</p>
 
             <ul class="skill-bars">
                 <li>
-                    <div class="progress percent90"><span>90%</span></div>
+                    <div class="progress percent75"><span>75%</span></div>
                     <strong>HTML5</strong>
                 </li>
                 <li>
-                    <div class="progress percent85"><span>85%</span></div>
+                    <div class="progress percent70"><span>70%</span></div>
                     <strong>CSS3</strong>
                 </li>
                 <li>
-                    <div class="progress percent70"><span>70%</span></div>
+                    <div class="progress percent65"><span>65%</span></div>
                     <strong>JQuery</strong>
                 </li>
                 <li>
-                    <div class="progress percent95"><span>95%</span></div>
+                    <div class="progress percent85"><span>85%</span></div>
                     <strong>PHP</strong>
                 </li>
                 <li>
 
-                    <div class="progress percent75"><span>75%</span></div>
-                    <strong>Wordpress</strong>
+                    <div class="progress percent60"><span>60%</span></div>
+                    <strong>vue</strong>
                 </li>
 
             </ul> <!-- /skill-bars -->
@@ -184,13 +184,23 @@
 
     <div class="row button-section">
         <div class="col-twelve">
-            <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-            <a href="#" title="Download CV" class="button button-primary">Download CV</a>
+            <a href="#contact" title="Hire Me" class="button stroke smoothscroll">打赏我吧（づ￣3￣）づ╭❤～</a>
+            <a id="dianzan" href="#" title="Download CV" class="button button-primary" onclick="show()">喜欢就赞~\(≧▽≦)/~吧<i
+                        class="fa fa-heart-o"></i></a>
+
         </div>
     </div>
-
+    <div id="win">
+        <div id="title">我是标题栏！<span id="close" onclick="hide()">X</span></div>
+        <div id="content">我是一个窗口！</div>
+    </div>
 </section> <!-- /process-->
-
+<script type="text/javascript">
+    function show() {
+        var winNode = $("#win");
+        winNode.show("slow");
+    }
+</script>
 
 <script src="{{ mix('js/app.js') }}"></script>
 </body>
