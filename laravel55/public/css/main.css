@@ -2892,6 +2892,8 @@ footer .footer-social li a {
 }
 
 footer .copyright span {
+    text-align: center;
+    font-size: 20px;
     display: inline-block;
 }
 
@@ -2975,28 +2977,33 @@ footer .copyright span:last-child::after {
 #win {
     /*边框*/
     border: 1px red solid;
+    box-sizing: border-box;
     /*窗口的高度和宽度*/
-    width: 300px;
+    width: 570px;
     height: 200px;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    background: rgb(231, 76, 60);
+    margin: 0px auto;
     /*窗口的位置*/
     position: absolute;
-    top: 100px;
-    left: 350px;
+    top: 1300px;
+    left: 450px;
     /*开始时窗口不可见*/
     display: none;
+
 }
 
 /*控制背景色的样式*/
 #title {
-    background-color: blue;
-    color: red;
-    /*控制标题栏的左内边距*/
-    padding-left: 3px;
-}
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-left: 10px;
+    border-radius: 3px 3px 0px 0px;
+    margin-top: 70px;
 
-#cotent {
-    padding-left: 3px;
-    padding-top: 5px;
 }
 
 /*控制关闭按钮的位置*/
@@ -3004,6 +3011,10 @@ footer .copyright span:last-child::after {
     margin-left: 188px;
     /*当鼠标移动到X上时，出现小手的效果*/
     cursor: pointer;
+}
+
+#pop_head {
+    display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
