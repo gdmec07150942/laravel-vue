@@ -1,0 +1,27 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: auto;
+    background: url("../../images/login.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgba(255, 255, 255, .95)
+}
+
+.login {
+    border-top: 10px solid rgba(200, 200, 200, 0.25);
+    border-right: 10px solid rgba(200, 200, 200, 0.5);
+    border-bottom: 10px solid rgba(200, 200, 200, 0.75);
+    border-left: 10px solid rgba(200, 200, 200, 1);
+    position: relative;
+    top: 450px;
+    left: 50px;
+    width: 45%;
+    height: 30%;
+    margin: 0 auto;
+    background:rgba(0,0,0,0.2) none repeat scroll !important;
+}
